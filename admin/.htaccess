@@ -1,0 +1,16 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# Redirect to the main index.html for any route that isn't found as a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
+# Optionally, you can add other configurations like cache control headers, redirects, etc.
+
+# Example of caching static files (images, CSS, JS, etc.)
+<FilesMatch "\.(jpg|jpeg|png|gif|css|js|woff|woff2|eot|ttf|svg|otf)$">
+  ExpiresActive On
+  ExpiresDefault "access plus 1 year"
+  Header set Cache-Control "public, must-revalidate, proxy-revalidate"
+</FilesMatch>

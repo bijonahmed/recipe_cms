@@ -1,0 +1,22 @@
+/* WhatsApp button on the left side */
+.whatsapp-btn-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* 👈 Align it to the left side */
+    z-index: 9999;
+    display: none; /* Initially hidden on mobile */
+  }
+  
+  /* Set image size */
+  .whatsapp-btn-left img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Show the button only on desktop screens (≥992px) */
+  @media (min-width: 992px) {
+    .whatsapp-btn-left {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,2 @@
+Run the scheduler on your server: php artisan schedule:work
+this command perfect run : php artisan queue:work

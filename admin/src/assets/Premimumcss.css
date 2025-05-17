@@ -1,0 +1,93 @@
+/* Ensure proper font size and spacing */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the pricing section */
+  .bsb-faq-3 {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  /* Center the section heading */
+  .bsb-faq-3 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* Flex container for tabs */
+  .nav-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for individual tab links */
+  .nav-tabs .nav-link {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: #007bff;
+    background-color: #ffffff;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+  }
+  
+  /* Center the tab content */
+  .tab-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for tab panes */
+  .tab-pane p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Flex container for payment buttons */
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Style for buttons */
+  .btn-custom {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-dark {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-dark:hover {
+    background-color: #23272b;
+  }
+  

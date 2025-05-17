@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/pages/icon.png" type="image/png" />
+    <title>Recepe</title>
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vender/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="vender/aos/dist/aos.css" />
+    <link rel="stylesheet" href="vender/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="vender/slick/slick/slick.css" />
+    <link rel="stylesheet" href="vender/slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body class="bg-light">
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <div class="bg-white tasty-nav shadow-sm">
+      <!-- Top-nav -->
+      <nav class="top-nav">
+        <div class="container py-3 py-lg-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+              <div
+                class="position-relative d-flex align-items-center gap-2 site-brand"
+              >
+                <i class="ri-restaurant-line fs-2 lh-1 text-danger"></i>
+                <div class="lh-1">
+                  <h5 class="fw-bold m-0 text-danger">Recipes</h5>
+                </div>
+                <a class="stretched-link" href="index.html"></a>
+              </div>
+            </div>
+            <div class="col-auto d-flex align-items-center gap-3">
+              <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#searchbar"><i class="ri-search-line ri-lg"></i></a> -->
+              <a href="#" class="d-none d-lg-block"><i class="ri-account-circle-line ri-lg"></i></a>
+              <a
+                href="#"
+                class="d-lg-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidenav"
+                aria-controls="sidenav"
+                ><i class="ri-menu-3-line ri-lg"></i
+              ></a>
+              <a href="#" class="btn btn-danger rounded-pill">Submit Recipe</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- bottom-nav -->
+      <nav
+        class="navbar osahan-main-nav bg-danger navbar-expand-lg bottom-nav d-none d-lg-block p-0"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-uppercase gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"
+                  ><i class="ri-apps-2-line"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipes.html">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="my-wallet.html">Dashboard</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="page-login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page-signup-2.html">Register</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center ms-auto gap-4">
+              <a href="#" class="text-white"
+                ><i class="ri-facebook-circle-fill ri-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="ri-twitter-fill ri-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="ri-instagram-fill ri-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- header -->
+    <div class="bg-warning-subtle py-5">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12">
+            <a
+              href="#"
+              class="badge text-bg-danger rounded-pill px-3 py-2 text-uppercase"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              >Receipe of the day</a
+            >
+            <h1
+              class="fw-bold display-2 py-2 text-black"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              Spinach and<br />
+              Feta Egg Muffins
+            </h1>
+            <div class="row align-items-center my-4">
+              <div class="col-12">
+                <div class="d-flex align-items-center gap-3">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    class="d-flex align-items-center gap-2 bg-white rounded-pill ps-2 py-2 pe-3"
+                  >
+                    <img
+                      src="img/profile/1.jpg"
+                      alt="credit"
+                      class="img-fluid rounded-circle by-profile"
+                    />
+                    <p class="fw-bold mb-0 ps-1">John Carter</p>
+                  </div>
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    class="d-flex align-items-center gap-2 bg-white rounded-pill ps-2 py-2 pe-3"
+                  >
+                    <i
+                      class="ri-timer-line ri-2x text-danger aos-init aos-animate lh-1"
+                    ></i>
+                    <p class="fw-bold mb-0">1 hour and 30 mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="demo lead" data-aos="fade-right" data-aos-duration="1500">
+              There are many variations of passages, but the majority have
+              suffered alteration in some form, by injected humour, or
+              randomised words which don't look even..
+            </p>
+            <div
+              class="d-flex align-items-center gap-3 mt-5"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <a href="#" class="btn btn-danger btn-lg rounded-pill"
+                ><i class="ri-book-open-fill me-2"></i>Cook Now</a
+              >
+              <a href="#" class="btn btn-outline-danger btn-lg rounded-pill"
+                ><i class="ri-search-eye-fill me-2"></i>Explore Receipes</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <img
+              src="img/homepage-header.png"
+              alt="header"
+              class="img-fluid rounded-4"
+              data-aos="flip-left"
+              data-aos-duration="3000"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Recipes of the Week -->
+    <div class="py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-xl-7 col-lg-8 col-md-10 col-12">
+            <div class="text-center">
+              <h1 class="fw-bold pb-2 display-5 text-black">
+                Recipes of the Week
+              </h1>
+              <p class="text-muted lead">
+                Fusce dignissim blandit justo, eget elementum risus tristique.
+                Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent
+                tristique enim lorem. Phasellus a auctor lacus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div
+              class="card border-0 shadow-sm rounded-5 overflow-hidden h-100"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/recipes/recipe-1.jpg"
+                class="card-img-top"
+                alt="recipe"
+              />
+              <div class="card-body px-4 pt-4">
+                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2"
+                  >APERITIVES</a
+                >
+                <a href="#">
+                  <h4 class="card-title fw-bold pt-3 h3">
+                    Crispy Parmesan Zucchini Fries
+                  </h4>
+                </a>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <small class="d-flex align-items-center gap-2">
+                  <a href="#"
+                    ><img
+                      src="img/profile/2.jpg"
+                      alt="post-profile"
+                      class="img-fluid rounded-circle post-profile"
+                  /></a>
+                  <a href="#">James</a> <span>/</span> DEC 16, 2024
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div
+              class="card border-0 shadow-sm rounded-5 overflow-hidden h-100"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/recipes/recipe-2.jpg"
+                class="card-img-top"
+                alt="recipe"
+              />
+              <div class="card-body px-4 pt-4">
+                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2"
+                  >PIZZAS</a
+                >
+                <a href="#">
+                  <h4 class="card-title fw-bold pt-3 h3">
+                    Mouthwatering Caprese Skewers
+                  </h4>
+                </a>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <small class="d-flex align-items-center gap-2">
+                  <a href="#"
+                    ><img
+                      src="img/profile/1.jpg"
+                      alt="post-profile"
+                      class="img-fluid rounded-circle post-profile"
+                  /></a>
+                  <a href="#">James</a> <span>/</span> DEC 16, 2024
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div
+              class="card border-0 shadow-sm rounded-5 overflow-hidden h-100"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/recipes/recipe-3.jpg"
+                class="card-img-top"
+                alt="recipe"
+              />
+              <div class="card-body px-4 pt-4">
+                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2"
+                  >APERITIVES</a
+                >
+                <a href="#">
+                  <h4 class="card-title fw-bold pt-3 h3">
+                    Spicy Buffalo Cauliflower Bites
+                  </h4>
+                </a>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <small class="d-flex align-items-center gap-2">
+                  <a href="#"
+                    ><img
+                      src="img/profile/3.jpg"
+                      alt="post-profile"
+                      class="img-fluid rounded-circle post-profile"
+                  /></a>
+                  <a href="#">James</a> <span>/</span> DEC 16, 2024
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div
+              class="card border-0 shadow-sm rounded-5 overflow-hidden h-100"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/recipes/recipe-4.jpg"
+                class="card-img-top"
+                alt="recipe"
+              />
+              <div class="card-body px-4 pt-4">
+                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2"
+                  >SALADS</a
+                >
+                <a href="#">
+                  <h4 class="card-title fw-bold pt-3 h3">
+                    Garlic Butter Shrimp Bruschetta
+                  </h4>
+                </a>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <small class="d-flex align-items-center gap-2">
+                  <a href="#"
+                    ><img
+                      src="img/profile/1.jpg"
+                      alt="post-profile"
+                      class="img-fluid rounded-circle post-profile"
+                  /></a>
+                  <a href="#">James</a> <span>/</span> DEC 16, 2024
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div
+              class="card border-0 shadow-sm rounded-5 overflow-hidden h-100"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/recipes/recipe-5.jpg"
+                class="card-img-top"
+                alt="recipe"
+              />
+              <div class="card-body px-4 pt-4">
+                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2"
+                  >APERITIVES</a
+                >
+                <a href="#">
+                  <h4 class="card-title fw-bold pt-3 h3">
+                    Raspberry Swirl Cheesecake Bars
+                  </h4>
+                </a>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <small class="d-flex align-items-center gap-2">
+                  <a href="#"
+                    ><img
+                      src="img/profile/2.jpg"
+                      alt="post-profile"
+                      class="img-fluid rounded-circle post-profile"
+                  /></a>
+                  <a href="#">James</a> <span>/</span> DEC 16, 2024
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div
+              class="card border-0 shadow-sm rounded-5 overflow-hidden h-100"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/recipes/recipe-6.jpg"
+                class="card-img-top"
+                alt="recipe"
+              />
+              <div class="card-body px-4 pt-4">
+                <div class="d-flex align-items-center gap-2">
+                  <a
+                    href="#"
+                    class="badge text-bg-danger rounded-pill px-3 py-2"
+                    >DESERT</a
+                  >
+                  <a
+                    href="#"
+                    class="badge text-bg-danger rounded-pill px-3 py-2"
+                    >SALADS</a
+                  >
+                </div>
+                <a href="#">
+                  <h4 class="card-title fw-bold pt-3 h3">
+                    Salted Caramel Apple Pie Galette
+                  </h4>
+                </a>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                <small class="d-flex align-items-center gap-2">
+                  <a href="#"
+                    ><img
+                      src="img/profile/3.jpg"
+                      alt="post-profile"
+                      class="img-fluid rounded-circle post-profile"
+                  /></a>
+                  <a href="#">James</a> <span>/</span> DEC 16, 2024
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-danger btn-lg rounded-pill"
+                >View all Recipes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Recipes By Category -->
+    <div class="bg-white py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center mb-5">
+          <div class="col-xl-7 col-lg-8 col-md-10 col-12">
+            <div class="text-center">
+              <h1 class="fw-bold pb-2 display-5 text-black">
+                Recipes By Category
+              </h1>
+              <p class="text-muted lead">
+                Fusce dignissim blandit justo, eget elementum risus tristique.
+                Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent
+                tristique enim lorem. Phasellus a auctor lacus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="card bg-white border-0 rounded-5 overflow-hidden"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img src="img/category/sweet.jpg" class="card-img" alt="sweet" />
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <div>
+                  <h5 class="bg-danger rounded-pill px-3 py-2 text-white">
+                    Sweets
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="card bg-white border-0 rounded-5 overflow-hidden"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/category/burger.jpg"
+                class="card-img"
+                alt="burger"
+              />
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <div>
+                  <h5 class="bg-danger rounded-pill px-3 py-2 text-white">
+                    Burger
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="card bg-white border-0 rounded-5 overflow-hidden"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/category/drinks.jpg"
+                class="card-img"
+                alt="drinks"
+              />
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <div>
+                  <h5 class="bg-danger rounded-pill px-3 py-2 text-white">
+                    Drinks
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div
+              class="card bg-white border-0 rounded-5 overflow-hidden"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img src="img/category/pizza.jpg" class="card-img" alt="pizza" />
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <div>
+                  <h5 class="bg-danger rounded-pill px-3 py-2 text-white">
+                    Pizza
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Download Our App -->
+    <div class="pt-5">
+      <div class="container pt-5">
+        <div
+          class="row align-items-center g-0 rounded-5 overflow-hidden bg-warning"
+        >
+          <div class="col-lg-6 col-12">
+            <img
+              src="img/download-app.jpg"
+              alt="download-app"
+              class="img-fluid"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div class="col-lg-6 col-12 px-4">
+            <div class="p-5" data-aos="fade-left" data-aos-duration="1300">
+              <h6 class="text-danger">BEST MOBILE APP</h6>
+              <h1 class="fw-bold py-2 display-5 text-black">
+                Download Our App
+              </h1>
+              <p class="text-muted">
+                Integer at faucibus urna. Nullam condimentum leo id elit
+                sagittis auctor. Curabitur elementum nunc a leo imperdiet, nec
+                elementum diam elementum. Etiam elementum euismod commodo.
+              </p>
+              <div class="d-flex align-items-center mt-5 gap-3">
+                <a href="#"
+                  ><img
+                    src="img/andriod-store.png"
+                    alt="android-store"
+                    class="img-fluid store rounded-3"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="img/app-store.png"
+                    alt="app-store"
+                    class="img-fluid store rounded-3"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- numbers -->
+    <div class="bg-danger text-white py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8 col-md-10 col-12">
+            <div
+              class="text-center"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              <p class="text-white-75">
+                <span class="bg-warning text-black px-3 py-2 rounded-pill"
+                  >MEET CHEFS AROUND THE WORLD</span
+                >
+              </p>
+              <h1 class="fw-bold display-5 text-white pt-3">
+                Be a Part of a Worldwide Network of Changemakers and Individuals
+                Like Yourself
+              </h1>
+
+              <div class="row mt-5">
+                <div class="col-lg-4 col-12">
+                  <div class="text-center">
+                    <h1 class="text-warning fw-bold display-1">2,000</h1>
+                    <p class="mb-0 text-white-50">UNIQUE RECIPES</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="text-center">
+                    <h1 class="text-warning fw-bold display-1">3,000</h1>
+                    <p class="mb-0 text-white-50">AWESOME MEMBERS</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="text-center">
+                    <h1 class="text-warning fw-bold display-1">100%</h1>
+                    <p class="mb-0 text-white-50">SATISFACTION RATE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-black text-white">
+      <div class="footer-top border-bottom border-dark">
+        <div class="container">
+          <div class="row gx-md-4 gy-md-0 g-4">
+            <div class="col-lg-3 col-12 border-end border-dark py-4">
+              <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                <h6 class="fw-bold pb-3 text-uppercase">Contact us</h6>
+                <div>
+                  <div class="d-flex align-items-start gap-4 mb-4">
+                    <i class="ri-map-pin-2-fill ri-2x text-secondary"></i>
+                    <div>
+                      <p class="mb-0 text-secondary-emphasis">
+                        9016 Goldfield StreetSouth Richmond Hill, New York 11419
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start gap-4 mb-4">
+                    <i class="ri-mail-fill ri-2x text-secondary"></i>
+                    <div>
+                      <p class="mb-0 text-secondary-emphasis">test@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start gap-4 mb-0">
+                    <i class="ri-phone-fill ri-2x text-secondary"></i>
+                    <div>
+                      <p class="mb-0 text-secondary-emphasis">
+                        +1800-964-152<br />
+                        +1800-964-152
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 border-end border-dark py-4 ps-lg-5">
+              <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                <h6 class="fw-bold pb-3 text-uppercase">Meet Tasty</h6>
+                <ul class="list-unstyled d-grid gap-2 m-0">
+                  <li><a href="#" class="link-secondary">Introduction</a></li>
+                  <li><a href="#" class="link-secondary">Pecipes</a></li>
+                  <li><a href="#" class="link-secondary">Our Chefs</a></li>
+                  <li><a href="#" class="link-secondary">Pricing Plans</a></li>
+                  <li><a href="#" class="link-secondary">Roadmap</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 border-end border-dark py-4 ps-lg-5">
+              <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                <h6 class="fw-bold pb-3 text-uppercase">Useful Links</h6>
+                <ul class="list-unstyled d-grid gap-2 m-0">
+                  <li><a href="#" class="link-secondary">Introduction</a></li>
+                  <li><a href="#" class="link-secondary">About Us</a></li>
+                  <li><a href="#" class="link-secondary">App Features</a></li>
+                  <li><a href="#" class="link-secondary">Cookies Policy</a></li>
+                  <li><a href="#" class="link-secondary">Privacy Policy</a></li>
+                  <li>
+                    <a href="#" class="link-secondary">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 py-4 ps-lg-5">
+              <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                <h6 class="fw-bold pb-3 text-uppercase">Download Our App</h6>
+                <p class="text-secondary-emphasis">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="text-secondary-emphasis">
+                  Seddo eiusmod tempor incididunt ut labore et dolore magna.
+                </p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                  <a href="#"
+                    ><img
+                      src="img/andriod-store.png"
+                      alt="android-store"
+                      class="img-fluid store border border-opacity-10 border-white"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="img/app-store.png"
+                      alt="app-store"
+                      class="img-fluid store border border-opacity-10 border-white"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end py-5 bg-black">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+              <p class="text-center m-0 text-white-50">
+                Copyright © <a href="#" class="text-white">Website Name</a> 2025
+              </p>
+            </div>
+            <div class="col-auto">
+              <div class="d-flex aling-items-center gap-4">
+                <a class="text-white" href="#"
+                  ><i class="ri-facebook-circle-fill ri-lg"></i
+                ></a>
+                <a class="text-white" href="#"
+                  ><i class="ri-twitter-fill ri-lg"></i
+                ></a>
+                <a class="text-white" href="#"
+                  ><i class="ri-instagram-fill ri-lg"></i
+                ></a>
+                <a class="text-white" href="#"
+                  ><i class="ri-pinterest-fill ri-lg"></i
+                ></a>
+                <a class="text-white" href="#"
+                  ><i class="ri-youtube-fill ri-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Search Modal -->
+    <div
+      class="modal fade bg-dark bg-opacity-50"
+      id="searchbar"
+      tabindex="-1"
+      aria-labelledby="searchbarLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="input-group border rounded">
+              <input
+                type="search"
+                class="form-control bg-transparent border-0 rounded-0"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search"
+                list="datalistOptions"
+              />
+              <datalist id="datalistOptions">
+                <option value="Trends"></option>
+                <option value="Nature"></option>
+                <option value="Travel"></option>
+                <option value="Art & Design"></option>
+                <option value="People"></option>
+              </datalist>
+              <a
+                href="#"
+                class="input-group-text bg-transparent border-0 rounded-0"
+                id="search"
+                ><i class="ri-search-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar offcanvas -->
+    <div
+      class="offcanvas offcanvas-top bg-opacity-75 h-100"
+      tabindex="-1"
+      id="sidenav"
+      aria-labelledby="sidenavLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="position-relative d-flex align-items-center gap-2 site-brand"
+        >
+          <i class="ri-restaurant-line fs-2 lh-1"></i>
+          <div class="lh-1">
+            <h5 class="fw-bold m-0">Recipes</h5>
+            <small class="text-dark-50">Template</small>
+          </div>
+          <a class="stretched-link" href="index.html"></a>
+        </div>
+        <a
+          href="#"
+          class="text-dark"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          ><i class="ri-close-fill ri-2x"></i
+        ></a>
+      </div>
+      <div class="offcanvas-body text-center">
+        <div class="sidebar-nav">
+          <ul class="navbar-nav mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="ri-apps-2-line"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipe-detail.html">Recipe Detail</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <a href="#"><i class="ri-facebook-circle-fill ri-lg"></i></a>
+            <a href="#"><i class="ri-twitter-fill ri-lg"></i></a>
+            <a href="#"><i class="ri-instagram-fill ri-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootsrap Bundle Js -->
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+    <script src="vender/aos/dist/aos.js"></script>
+    <script src="vender/slick/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

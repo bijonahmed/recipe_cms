@@ -1,0 +1,75 @@
+.custom-modal {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    max-width: 500px;
+    height: 100%;
+    background: white;
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.custom-modal.open {
+    right: 0;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .custom-modal {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+
+/* Modal Header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Image Preview */
+.img-thumbnail {
+    border-radius: 5px;
+    margin-top: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Submit Button */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,7 @@
+ul {
+    display: none;
+  }
+  
+  ul.open {
+    display: block;
+  }

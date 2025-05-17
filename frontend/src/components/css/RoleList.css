@@ -1,0 +1,19 @@
+  /* Optional: Add spacing between dropdown and button */
+.filter-dropdown {
+    flex-grow: 1; /* Ensures the dropdown takes available space */
+  }
+  
+  button.btn {
+    white-space: nowrap; /* Keeps the button text on a single line */
+  }
+
+  @media (max-width: 768px) {
+    .searchbar input {
+      margin-bottom: 10px; /* Add spacing for smaller devices */
+    }
+  
+    .filter-dropdown select {
+      flex-grow: 1; /* Ensures the dropdown scales properly */
+    }
+  }
+  

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from iamosahan.com/wrapbootstrap-pillarix/recepe/recipes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 May 2025 18:16:18 GMT -->
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/pages/icon.png" type="image/png">
+        <title>Recepe | Recipe & Food Blog Website Template</title>
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.min.css">
+        <!-- Icofont Css -->
+        <link rel="stylesheet" href="vender/icofont/icofont.min.css">
+        <!-- AOS Css -->
+        <link rel="stylesheet" href="vender/aos/dist/aos.css">
+        <!-- Remix Icon -->
+        <link rel="stylesheet" href="vender/remixicon/remixicon.css">
+        <!-- Slick Slider Css -->
+        <link rel="stylesheet" href="vender/slick/slick/slick.css">
+        <link rel="stylesheet" href="vender/slick/slick/slick-theme.css">
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Common Css -->
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body>
+        <!-- Page loading spinner -->
+        <div class="page-loading active">
+            <div class="page-loading-inner">
+                <div class="page-spinner"></div>
+                <span>Loading...</span>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <div class="bg-white tasty-nav shadow-sm">
+            <!-- Top-nav -->
+            <nav class="top-nav">
+                <div class="container py-3 py-lg-3">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                                <i class="ri-restaurant-line fs-2 lh-1 text-danger"></i>
+                                <div class="lh-1">
+                                    <h5 class="fw-bold m-0 text-danger">Recipes</h5>
+                                    <small class="text-dark-50">Template</small>
+                                </div>
+                                <a class="stretched-link" href="index.html"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-3">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#searchbar"><i class="ri-search-line ri-lg"></i></a>
+                            <a href="#" class="d-none d-lg-block"><i class="ri-account-circle-line ri-lg"></i></a>
+                            <a href="#" class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidenav" aria-controls="sidenav"><i class="ri-menu-3-line ri-lg"></i></a>
+                            <a href="#" class="btn btn-danger rounded-pill">Submit Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- bottom-nav -->
+            <nav class="navbar osahan-main-nav bg-danger navbar-expand-lg bottom-nav d-none d-lg-block p-0">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-uppercase gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html"><i class="ri-apps-2-line"></i> Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="recipe-detail.html">Recipe Detail</a></li>
+                            <li class="nav-item dropdown osahan-mega-menu position-static">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Elements </a>
+                                <ul class="dropdown-menu w-100 m-0 border-opacity-10 border-dark border-top border-bottom p-0 start-0 end-0 rounded-0 shadow">
+                                    <li>
+                                        <div class="dropdown-mega-content container">
+                                            <div class="row g-0">
+                                                <div class="col-lg-3 p-5 border-end border-start border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Elements 1</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-accordions-toggles.html">Accordions &amp; Toggles</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-tabs.html">Tabs</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-icons.html">Icons</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-pagination.html">Pagination</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-cards.html">Cards</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-carousels.html">Carousels</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-modals.html">Modals</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-placeholders.html">Placeholders</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-medias.html">Medias</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-maps.html">Maps</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-forms-basic.html">Forms</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Elements 2</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-buttons.html">Buttons</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-badges.html">Badges</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-lists.html">Lists</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-offcanvas.html">Offcanvas</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-image-frames.html">Image Frames</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-testimonials.html">Testimonials</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-blockquotes.html">Blockquotes</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-borders.html">Borders</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-process.html">Process</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-countdowns.html">Countdowns</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-spinners.html">Spinners</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Elements 3</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-call-to-action.html">Call to Action</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-pricing-tables.html">Pricing Tables</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-tables.html">Tables</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-progress-bars.html">Progress Bars</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-colors.html">Colors</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-dropdowns.html">Dropdowns</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-tooltips-popovers.html">Tooltips &amp; Popovers</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-sticky-elements.html">Sticky Elements</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-typography.html">Typography</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-alerts.html">Alerts</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 dropdown-mega-sub-content-block d-none d-lg-block bg-light p-5 osahan-dropdown-box border-end border-opacity-10 border-dark">
+                                                    <img src="img/logo.png" class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
+                                                    <h5 class="text-dark mt-5 mb-2"> Multi-Purpose</h5>
+                                                    <h1 class="text-primary fw-bold">And Powerful Bootstrap based </h1>
+                                                    <p class="lead mb-5">
+                                                        Template with 180+ Valid Multi-Page & One-Page Layouts
+                                                        
+                                                    </p>
+                                                    <a class="btn btn-primary px-5 py-3" href="#">GET STARTED</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown osahan-mega-menu position-static">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Extra Pages </a>
+                                <ul class="dropdown-menu w-100 m-0 border-opacity-10 border-dark border-top border-bottom p-0 start-0 end-0 rounded-0 shadow">
+                                    <li>
+                                        <div class="dropdown-mega-content container">
+                                            <div class="row g-0">
+                                                <div class="col-lg-3 p-5 border-end border-start border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Portfolio</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-full-width.html">Portfolio Full Width</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-boxed.html">Portfolio Boxed</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-classic.html">Portfolio Classic</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-masonry.html">Portfolio Masonry</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/single-project.html">Single Project</a></li>
+                                                    </ul>
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">Additional Pages</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-coming-soon.html">Coming Soon</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-coming-soon-simple.html">Coming Soon: Simple</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-error-404.html">Maintenance</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-error-404.html">Error 404</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-terms.html">Terms &amp; Conditions</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-privacy.html">Privacy &amp; Policy</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Blog</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-grid.html">Blog Grid</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-grid-classic.html">Blog Grid Classic</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-list.html">Blog List</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-list-sidebar.html">Blog List Right Sidebar</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-full-width.html">Blog Full Width</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-post.html">Blog Post</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-author-profile.html">Author Profile</a></li>
+                                                    </ul>
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">Help</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-help-center.html">Help Center</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-help-center-categories.html">Help Center: Categories</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-help-center-article.html">Help Center: Article</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Shop</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-grid.html">Product Grid</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-list.html">Product List</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-full-three-coulmn.html">Product Three Coulmns</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-full-four-coulmn.html">Product Four Coulmns</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-detail.html">Product Detail</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-cart.html">Shop Cart</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-checkout.html">Shop Checkout</a></li>
+                                                    </ul>
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">Company</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-hire-us.html">Hire Us</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-careers.html">Careers</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-careers-role-overview.html">Careers: Role Overview</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-careers-apply.html">Careers: Apply</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold">My Account</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-login.html">Log In v.1</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-login-2.html">Log In v.2</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-signup.html">Sign Up v.1</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-signup-2.html">Sign Up v.2</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-reset-password.html">Forgot Password</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-orders.html">Orders</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-settings.html">Settings</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-address.html">Address</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/my-wallet.html">My Wallet</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-notification.html">Notification</a></li>
+                                                    </ul>
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">FAQ</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/faq.html">FAQ v.1</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/faq-2.html">FAQ v.2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center ms-auto gap-4">
+                            <a href="#" class="text-white"><i class="ri-facebook-circle-fill ri-lg"></i></a> <a href="#" class="text-white"><i class="ri-twitter-fill ri-lg"></i></a>
+                            <a href="#" class="text-white"><i class="ri-instagram-fill ri-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- header -->
+        <div class="bg-white py-5">
+          <div class="container py-5">
+              <div class="row justify-content-center">
+                  <div class="col-xl-7 col-lg-8 col-md-10 col-12">
+                      <div class="text-center" data-aos="fade-up" data-aos-duration="1300">
+                          <nav>
+                              <ol class="breadcrumb justify-content-center">
+                                  <li class="breadcrumb-item"><a href="#" class="text-danger">HOME</a></li>
+                                  <li class="breadcrumb-item link-secondary active" aria-current="page">RECIPES</li>
+                              </ol>
+                          </nav>
+                          <h1 class="fw-bold pb-2 display-1 text-black">Recipes</h1>
+                          <p class="text-muted lead">Macaroon I love ice cream bear claw icing jelly beans jelly-o gingerbread cookie. Tootsie roll gummi bears liquorice brownie candy canes candy canes I love soufflé bear claw.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- all recipes -->
+        <div class="pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-1.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">APERITIVES</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Crispy Parmesan Zucchini Fries</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-2.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">PIZZAS</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Mouthwatering Caprese Skewers</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-3.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">APERITIVES</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Spicy Buffalo Cauliflower Bites</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-4.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Garlic Butter Shrimp Bruschetta</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-5.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">APERITIVES</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Raspberry Swirl Cheesecake Bars</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-6.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <div class="d-flex align-items-center gap-2"><a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">DESERT</a> <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a></div>
+                                <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Salted Caramel Apple Pie Galette</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-7.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">DESERT</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Raspberry Swirl Cheesecake Bars</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-8.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <div class="d-flex align-items-center gap-2"><a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">DESERT</a> <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a></div>
+                                <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Salted Caramel Apple Pie Galette</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="img/recipes/recipe-9.jpg" class="card-img-top" alt="recipe">
+                            <div class="card-body px-4 pt-4">
+                                <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Banana Walnut Overnight Oats</h4> </a>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                <small class="d-flex align-items-center gap-2">
+                                    <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <nav aria-label="Page navigation example" class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link">Previous</a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+          <!-- slider -->
+          <div class="bg-dark text-white py-5 d-none d-md-block">
+              <div class="container py-4">
+                  <div class="row mb-4">
+                      <div class="col-auto">
+                          <h5 class="text-black"><i class="ri-line-chart-line"></i> Trending Now</h5>
+                      </div>
+                      <div class="col-auto"></div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 px-1">
+                          <div class="three-slider">
+                              <div class="trending-item px-2">
+                                  <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100">
+                                      <img src="img/recipes/recipe-4.jpg" class="card-img-top" alt="recipe">
+                                      <div class="card-body px-4 pt-4">
+                                          <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Garlic Butter Shrimp Bruschetta</h4> </a>
+                                      </div>
+                                      <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                          <small class="d-flex align-items-center gap-2">
+                                              <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                          </small>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="trending-item px-2">
+                                  <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100">
+                                      <img src="img/recipes/recipe-5.jpg" class="card-img-top" alt="recipe">
+                                      <div class="card-body px-4 pt-4">
+                                          <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">APERITIVES</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Raspberry Swirl Cheesecake Bars</h4> </a>
+                                      </div>
+                                      <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                          <small class="d-flex align-items-center gap-2">
+                                              <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                          </small>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="trending-item px-2">
+                                  <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100">
+                                      <img src="img/recipes/recipe-6.jpg" class="card-img-top" alt="recipe">
+                                      <div class="card-body px-4 pt-4">
+                                          <div class="d-flex align-items-center gap-2">
+                                              <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">DESERT</a> <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a>
+                                          </div>
+                                          <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Salted Caramel Apple Pie Galette</h4> </a>
+                                      </div>
+                                      <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                          <small class="d-flex align-items-center gap-2">
+                                              <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                          </small>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="trending-item px-2">
+                                  <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100">
+                                      <img src="img/recipes/recipe-4.jpg" class="card-img-top" alt="recipe">
+                                      <div class="card-body px-4 pt-4">
+                                          <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Garlic Butter Shrimp Bruschetta</h4> </a>
+                                      </div>
+                                      <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                          <small class="d-flex align-items-center gap-2">
+                                              <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                          </small>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="trending-item px-2">
+                                  <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100">
+                                      <img src="img/recipes/recipe-5.jpg" class="card-img-top" alt="recipe">
+                                      <div class="card-body px-4 pt-4">
+                                          <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">APERITIVES</a> <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Raspberry Swirl Cheesecake Bars</h4> </a>
+                                      </div>
+                                      <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                          <small class="d-flex align-items-center gap-2">
+                                              <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                          </small>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="trending-item px-2">
+                                  <div class="card border-0 shadow-sm rounded-5 overflow-hidden h-100">
+                                      <img src="img/recipes/recipe-6.jpg" class="card-img-top" alt="recipe">
+                                      <div class="card-body px-4 pt-4">
+                                          <div class="d-flex align-items-center gap-2">
+                                              <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">DESERT</a> <a href="#" class="badge text-bg-danger rounded-pill px-3 py-2">SALADS</a>
+                                          </div>
+                                          <a href="#"> <h4 class="card-title fw-bold pt-3 h3">Salted Caramel Apple Pie Galette</h4> </a>
+                                      </div>
+                                      <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                                          <small class="d-flex align-items-center gap-2">
+                                              <a href="#"><img src="img/profile/1.jpg" alt="post-profile" class="img-fluid rounded-circle post-profile"></a> <a href="#">Alessandro Rossi</a> <span>/</span> DEC 16, 2024
+                                          </small>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <footer class="footer bg-black text-white">
+            <div class="footer-top border-bottom border-dark">
+                <div class="container">
+                    <div class="row gx-md-4 gy-md-0 g-4">
+                        <div class="col-lg-3 col-12 border-end border-dark py-4">
+                            <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                                <h6 class="fw-bold pb-3 text-uppercase">Contact us</h6>
+                                <div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <i class="ri-map-pin-2-fill ri-2x text-secondary"></i>
+                                        <div>
+                                            <p class="mb-0 text-secondary-emphasis">9016 Goldfield StreetSouth Richmond Hill, New York 11419</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-4">
+                                        <i class="ri-mail-fill ri-2x text-secondary"></i>
+                                        <div>
+                                            <p class="mb-0 text-secondary-emphasis">
+                                                <a href="https://iamosahan.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="117469707c617d7451767c70787d3f727e7c">[email&#160;protected]</a><br>
+                                                <a href="https://iamosahan.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fafdf5fcd3f4fef2faffbdf0fcfe">[email&#160;protected]</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-4 mb-0">
+                                        <i class="ri-phone-fill ri-2x text-secondary"></i>
+                                        <div>
+                                            <p class="mb-0 text-secondary-emphasis">
+                                                +1800-964-152<br>
+                                                +1800-964-152
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 border-end border-dark py-4 ps-lg-5">
+                            <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                                <h6 class="fw-bold pb-3 text-uppercase">Meet Tasty</h6>
+                                <ul class="list-unstyled d-grid gap-2 m-0">
+                                    <li><a href="#" class="link-secondary">Introduction</a></li>
+                                    <li><a href="#" class="link-secondary">Pecipes</a></li>
+                                    <li><a href="#" class="link-secondary">Our Chefs</a></li>
+                                    <li><a href="#" class="link-secondary">Pricing Plans</a></li>
+                                    <li><a href="#" class="link-secondary">Roadmap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 border-end border-dark py-4 ps-lg-5">
+                            <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                                <h6 class="fw-bold pb-3 text-uppercase">Useful Links</h6>
+                                <ul class="list-unstyled d-grid gap-2 m-0">
+                                    <li><a href="#" class="link-secondary">Introduction</a></li>
+                                    <li><a href="#" class="link-secondary">About Us</a></li>
+                                    <li><a href="#" class="link-secondary">App Features</a></li>
+                                    <li><a href="#" class="link-secondary">Cookies Policy</a></li>
+                                    <li><a href="#" class="link-secondary">Privacy Policy</a></li>
+                                    <li><a href="#" class="link-secondary">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 py-4 ps-lg-5">
+                            <div class="py-lg-5" data-aos="fade-up" data-aos-duration="1300">
+                                <h6 class="fw-bold pb-3 text-uppercase">Download Our App</h6>
+                                <p class="text-secondary-emphasis">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="text-secondary-emphasis">Seddo eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <a href="#"><img src="img/andriod-store.png" alt="android-store" class="img-fluid store border border-opacity-10 border-white"></a>
+                                    <a href="#"><img src="img/app-store.png" alt="app-store" class="img-fluid store border border-opacity-10 border-white"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end py-5 bg-black">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <p class="text-center m-0 text-white-50">Copyright © <a href="#" class="text-white">Website Name</a> 2025</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="d-flex aling-items-center gap-4">
+                                <a class="text-white" href="#"><i class="ri-facebook-circle-fill ri-lg"></i></a> <a class="text-white" href="#"><i class="ri-twitter-fill ri-lg"></i></a>
+                                <a class="text-white" href="#"><i class="ri-instagram-fill ri-lg"></i></a> <a class="text-white" href="#"><i class="ri-pinterest-fill ri-lg"></i></a>
+                                <a class="text-white" href="#"><i class="ri-youtube-fill ri-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Search Modal -->
+        <div class="modal fade bg-dark bg-opacity-50" id="searchbar" tabindex="-1" aria-labelledby="searchbarLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="input-group border rounded">
+                            <input type="search" class="form-control bg-transparent border-0 rounded-0" placeholder="Search" aria-label="Search" aria-describedby="search" list="datalistOptions">
+                            <datalist id="datalistOptions">
+                                <option value="Trends"> </option>
+                                <option value="Nature"> </option>
+                                <option value="Travel"> </option>
+                                <option value="Art & Design"> </option>
+                                <option value="People"> </option>
+                            </datalist>
+                            <a href="#" class="input-group-text bg-transparent border-0 rounded-0" id="search"><i class="ri-search-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar offcanvas -->
+        <div class="offcanvas offcanvas-top bg-opacity-75 h-100" tabindex="-1" id="sidenav" aria-labelledby="sidenavLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+                <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                    <i class="ri-restaurant-line fs-2 lh-1"></i>
+                    <div class="lh-1">
+                        <h5 class="fw-bold m-0">Recipes</h5>
+                        <small class="text-dark-50">Template</small>
+                    </div>
+                    <a class="stretched-link" href="index.html"></a>
+                </div>
+                <a href="#" class="text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ri-close-fill ri-2x"></i></a>
+            </div>
+            <div class="offcanvas-body text-center">
+                <div>
+                    <p class="text-muted">
+                        The Best Fluffy Pancakes recipe you will fall in love with. Full of tips and tricks<br>
+                        to help you make the best pancakes.
+                    </p>
+                </div>
+                <div class="sidebar-nav">
+                    <ul class="navbar-nav mb-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><i class="ri-apps-2-line"></i> Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recipe-detail.html">Recipe Detail</a></li>
+                        <li class="nav-item dropdown osahan-mega-menu position-static">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Elements </a>
+                            <ul class="dropdown-menu w-100 m-0 border-opacity-10 border-dark border-top border-bottom p-0 start-0 end-0 rounded-0 shadow">
+                                <li>
+                                    <div class="dropdown-mega-content container">
+                                        <div class="row g-0">
+                                            <div class="col-lg-3 p-5 border-end border-start border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Elements 1</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-accordions-toggles.html">Accordions &amp; Toggles</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-tabs.html">Tabs</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-icons.html">Icons</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-pagination.html">Pagination</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-cards.html">Cards</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-carousels.html">Carousels</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-modals.html">Modals</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-placeholders.html">Placeholders</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-medias.html">Medias</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-maps.html">Maps</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-forms-basic.html">Forms</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Elements 2</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-buttons.html">Buttons</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-badges.html">Badges</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-lists.html">Lists</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-offcanvas.html">Offcanvas</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-image-frames.html">Image Frames</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-testimonials.html">Testimonials</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-blockquotes.html">Blockquotes</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-borders.html">Borders</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-process.html">Process</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-countdowns.html">Countdowns</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-spinners.html">Spinners</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Elements 3</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-call-to-action.html">Call to Action</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-pricing-tables.html">Pricing Tables</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-tables.html">Tables</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-progress-bars.html">Progress Bars</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-colors.html">Colors</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-dropdowns.html">Dropdowns</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-tooltips-popovers.html">Tooltips &amp; Popovers</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-sticky-elements.html">Sticky Elements</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-typography.html">Typography</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="elements/elements-alerts.html">Alerts</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 dropdown-mega-sub-content-block d-none d-lg-block bg-light p-5 osahan-dropdown-box border-end border-opacity-10 border-dark">
+                                                <img src="img/logo.png" class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
+                                                <h5 class="text-dark mt-5 mb-2"> Multi-Purpose</h5>
+                                                <h1 class="text-primary fw-bold">And Powerful Bootstrap based </h1>
+                                                <p class="lead mb-5">
+                                                    Template with 180+ Valid Multi-Page & One-Page Layouts
+                                                    
+                                                </p>
+                                                <a class="btn btn-primary px-5 py-3" href="#">GET STARTED</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown osahan-mega-menu position-static">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Extra Pages </a>
+                            <ul class="dropdown-menu w-100 m-0 border-opacity-10 border-dark border-top border-bottom p-0 start-0 end-0 rounded-0 shadow">
+                                <li>
+                                    <div class="dropdown-mega-content container">
+                                        <div class="row g-0">
+                                            <div class="col-lg-3 p-5 border-end border-start border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Portfolio</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-full-width.html">Portfolio Full Width</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-boxed.html">Portfolio Boxed</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-classic.html">Portfolio Classic</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/portfolio-masonry.html">Portfolio Masonry</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/single-project.html">Single Project</a></li>
+                                                </ul>
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">Additional Pages</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-coming-soon.html">Coming Soon</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-coming-soon-simple.html">Coming Soon: Simple</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-error-404.html">Maintenance</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-error-404.html">Error 404</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-terms.html">Terms &amp; Conditions</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-privacy.html">Privacy &amp; Policy</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Blog</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-grid.html">Blog Grid</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-grid-classic.html">Blog Grid Classic</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-list.html">Blog List</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-list-sidebar.html">Blog List Right Sidebar</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-full-width.html">Blog Full Width</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-post.html">Blog Post</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/blog-author-profile.html">Author Profile</a></li>
+                                                </ul>
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">Help</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-help-center.html">Help Center</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-help-center-categories.html">Help Center: Categories</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-help-center-article.html">Help Center: Article</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">Shop</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-grid.html">Product Grid</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-list.html">Product List</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-full-three-coulmn.html">Product Three Coulmns</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-full-four-coulmn.html">Product Four Coulmns</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-product-detail.html">Product Detail</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-cart.html">Shop Cart</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/shop-checkout.html">Shop Checkout</a></li>
+                                                </ul>
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">Company</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-hire-us.html">Hire Us</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-careers.html">Careers</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-careers-role-overview.html">Careers: Role Overview</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-careers-apply.html">Careers: Apply</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark">
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold">My Account</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-login.html">Log In v.1</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-login-2.html">Log In v.2</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-signup.html">Sign Up v.1</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-signup-2.html">Sign Up v.2</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/page-reset-password.html">Forgot Password</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-orders.html">Orders</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-settings.html">Settings</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-address.html">Address</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/my-wallet.html">My Wallet</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/account-notification.html">Notification</a></li>
+                                                </ul>
+                                                <h6 class="dropdown-mega-sub-title mb-3 fw-bold mt-4">FAQ</h6>
+                                                <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/faq.html">FAQ v.1</a></li>
+                                                    <li><a class="dropdown-item px-0 py-1 bg-transparent" href="pages/faq-2.html">FAQ v.2</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <a href="#"><i class="ri-facebook-circle-fill ri-lg"></i></a> <a href="#"><i class="ri-twitter-fill ri-lg"></i></a> <a href="#"><i class="ri-instagram-fill ri-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootsrap Bundle Js -->
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Jquery Js -->
+        <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+        <!-- AOS Js -->
+        <script src="vender/aos/dist/aos.js"></script>
+        <!-- Slick Slider Js -->
+        <script src="vender/slick/slick/slick.min.js"></script>
+        <!-- Slick Js -->
+        <script src="js/slick.js"></script>
+        <!-- Custom Js -->
+        <script src="js/script.js"></script>
+    </body>
+
+<!-- Mirrored from iamosahan.com/wrapbootstrap-pillarix/recepe/recipes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 May 2025 18:16:19 GMT -->
+</html>

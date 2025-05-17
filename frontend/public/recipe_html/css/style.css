@@ -1,0 +1,137 @@
+/*
+Template Name: Recepe | Recipe & Food Blog Website Template
+Author: Pillarix
+Author URI: https://wrapbootstrap.com/user/pillarix
+Version: 1.0
+*/
+/*
+-- Body
+-- Custom Classes 
+-- Sidebar Nav
+-- Index
+-- About
+-- Footer
+*/
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&amp;display=swap');
+
+/* Body */
+body {
+	font-family: 'Sen', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #1b1b1b;
+}
+a:hover {
+	color: #5243C2;
+}
+.tasty-nav  a.nav-link {
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+	color: #fff;
+}
+.tasty-nav  a.nav-link:hover, .tasty-nav  a.nav-link.active {
+	color: #FFC2C2;
+}
+
+/* Custom Classes */
+.three-slider .slick-arrow {
+	display: none;
+}
+.page-link {
+	color: #5243c2;
+}
+.active>.page-link, .page-link.active {
+	background: #5243c2;
+	border-color: #5243c2;
+}
+.bg-dark {
+	background-color: #FFC2C2 !important;
+}
+.bg-warning-subtle{
+	background-color: #eae7ff !important;
+}
+.btn-sm {
+	font-size: 15px;
+	padding: 13px 30px;
+}
+.btn-lg {
+	font-size: 15px;
+	padding: 12px 18px;
+}
+.btn-danger {
+	background-color: #5243C2 !important;
+	border-color: #5243C2 !important;
+}
+.btn-danger:hover {
+	background-color: #3926CA !important;
+	border-color: #3926CA !important;
+}
+.btn-outline-danger {
+	color: #5243C2 !important;
+	border-color: #5243C2 !important;
+}
+.btn-outline-danger:hover {
+	background-color: #5243C2 !important;
+	border-color: #5243C2 !important;
+	color: #fff !important;
+}
+.text-bg-danger {
+	background-color: rgb(82 67 194 / 11%) !important;
+	color: #5243C2 !important;
+}
+.text-danger {
+	color: #5243C2 !important;
+}
+.bg-danger {
+	background-color: #5243C2 !important;
+}
+.osahan-profile-pic {
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	margin: auto;
+}
+
+/* Sidebar Nav */
+.sidebar-nav .nav-link.active {
+	color: #5243C2;
+}
+
+/* Index */
+.by-profile {
+	width: 32px;
+	height: 32px;
+	object-fit: cover;
+}
+.post-profile {
+	width: 33px;
+	margin-right: 7px;
+	height: 33px;
+	object-fit: cover;
+}
+.store {
+	width: 10rem;
+}
+.icon {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* About */
+.terminal-profile {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+}
+
+/* Footer */
+.trending-img {
+	width: 60px;
+}
+.footer-top a:hover {
+	color: #5243C2 !important;
+}

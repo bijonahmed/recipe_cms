@@ -1,0 +1,85 @@
+.profile-wrapper {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.profile-banner {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 60px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.profile-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.profile-banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.profile-form-section {
+  padding: 60px 15px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 5px rgba(78, 84, 200, 0.3);
+  outline: none;
+}
+
+.error {
+  display: block;
+  margin-top: 6px;
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.form-actions button {
+  background: #4e54c8;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-actions button:hover {
+  background: #3439b5;
+}

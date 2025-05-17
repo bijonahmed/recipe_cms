@@ -1,0 +1,36 @@
+.recipe-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-input {
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  transition: border 0.2s ease-in-out;
+  border: 1px solid #ced4da;
+}
+
+.recipe-input:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+}
+
+.submit-btn {
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}

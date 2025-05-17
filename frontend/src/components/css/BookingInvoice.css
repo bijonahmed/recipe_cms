@@ -1,0 +1,13 @@
+.invoice-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .invoice-box h4 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  

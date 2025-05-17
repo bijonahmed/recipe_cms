@@ -1,0 +1,16 @@
+/* Ensure that the toolbar is visible */
+.editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .editor-toolbar button {
+    margin: 0 5px;
+  }
+  
+  /* You may want to override specific styles here if needed */
+  

@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect to the public folder
+    RewriteRule ^$ public/ [L]
+    RewriteRule ^index\.php$ - [L]
+
+    # Redirect to the public folder (when using the public directory as the root)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Rewrite all requests to the front controller (index.php)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php/$1 [L]
+</IfModule>
+
+# Disable directory listing
+Options -Indexes

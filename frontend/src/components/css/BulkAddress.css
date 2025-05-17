@@ -1,0 +1,10 @@
+.status-active {
+    background-color: green;
+    color: white;
+  }
+  
+  .status-inactive {
+    background-color: red;
+    color: white;
+  }
+  
