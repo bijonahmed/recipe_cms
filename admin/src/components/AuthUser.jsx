@@ -38,7 +38,7 @@ export default function AuthUser() {
     }
 
     const http = axios.create({
-        baseURL: process.env.NODE_ENV === 'production' ? 'https://api.moon-nest.com/api/' : 'http://127.0.0.1:8000/api/',
+        baseURL: process.env.NODE_ENV === 'production' ? 'https://api.recipe.futuregenit.com/api/' : 'http://127.0.0.1:8000/api/',
         headers: {
             "Content-type": "application/json",
             "Authorization": `Bearer ${token}`

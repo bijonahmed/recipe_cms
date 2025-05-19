@@ -13,7 +13,7 @@ const RecipesDetails = () => {
   const [recepiData, setRecepiData] = useState("");
   const [recpImg, setRecepiImg] = useState("");
   const [liked, setLiked] = useState(0);
-   const [likeCount, setLikeCount] = useState(0);
+  const [likeCount, setLikeCount] = useState(0);
   const { slug } = useParams();
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -118,7 +118,7 @@ const RecipesDetails = () => {
   const handleLike = async () => {
     setLoading(true);
     try {
-        const token = JSON.parse(sessionStorage.getItem("token"));
+      const token = JSON.parse(sessionStorage.getItem("token"));
       const response = await axios.post(
         "/post/userlike",
         { slug },
@@ -130,10 +130,10 @@ const RecipesDetails = () => {
       );
       if (response.data.message === "Liked") {
         setLiked(true);
-        setLikeCount(prev => prev + 1);
+        setLikeCount((prev) => prev + 1);
       } else if (response.data.message === "Disliked") {
-       setLiked(false);
-        setLikeCount(prev => Math.max(prev - 1, 0));
+        setLiked(false);
+        setLikeCount((prev) => Math.max(prev - 1, 0));
       }
     } catch (error) {
       console.error(error);
@@ -268,14 +268,19 @@ const RecipesDetails = () => {
                   </div>
                   <div className="bg-warning-subtle rounded-4 p-4 mb-4">
                     <h5 className="fw-bold">INGREDIENTS</h5>
-                   
-                   <p
-  style={{ textAlign: "justify" }}
-  className="text-muted"
-  dangerouslySetInnerHTML={{
-    __html: recepiData.ingredients.replace(/\n/g, "<br />"),
-  }}
-></p>
+
+                  {recepiData?.ingredients ? (
+  <p
+    style={{ textAlign: "justify" }}
+    className="text-muted"
+    dangerouslySetInnerHTML={{
+      __html: recepiData.ingredients.replace(/\n/g, "<br />"),
+    }}
+  ></p>
+) : (
+  <p className="text-muted">Loading ingredients...</p>
+)}
+
                   </div>
                 </div>
               </div>
@@ -292,7 +297,7 @@ const RecipesDetails = () => {
                     onClick={handleLike}
                     disabled={loading}
                   >
-                    {liked ? "💔 Dislike" : "❤️ Like"}  ({likeCount})
+                    {liked ? "💔 Dislike" : "❤️ Like"} ({likeCount})
                   </button>
                   {/* <span className="fw-bold">{likecount} Likes</span> */}
                 </div>

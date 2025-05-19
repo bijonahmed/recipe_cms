@@ -86,7 +86,7 @@ const Recipes = () => {
                       <div className="card-body px-4 pt-4">
                         <Link to={`/recipe-details/${recipe.slug}`}>
                           <h4 className="card-title fw-bold pt-3 h3">
-                            {recipe.slug}
+                            {recipe.r_name}
                           </h4>
                         </Link>
                       </div>

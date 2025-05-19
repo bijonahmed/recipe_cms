@@ -55,9 +55,42 @@ const Navbar = () => {
 
                 {token ? (
                   <>
-                    <Link to="/user/profile" className="d-none d-lg-block">
-                      <i className="ri-account-circle-line ri-lg" /> Profile
-                    </Link>
+                    <div className="dropdown d-none d-lg-block">
+                      <Link
+                        to="#"
+                        className="dropdown-toggle d-flex align-items-center"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i className="ri-account-circle-line ri-lg me-1" />
+                        Profile
+                      </Link>
+                      <ul className="dropdown-menu">
+                        <li>
+                          <Link to="/user/profile" className="dropdown-item">
+                            View Profile
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/user/change-password"
+                            className="dropdown-item"
+                          >
+                            Change Password
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="#"
+                            className="dropdown-item"
+                            onClick={logoutUser}
+                          >
+                            Logout
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </>
                 ) : (
                   <></>
@@ -168,19 +201,16 @@ const Navbar = () => {
                 )}
               </ul>
               <div className="d-flex align-items-center ms-auto gap-4">
-
-                  <a href={name.fblink} target="_blank" rel="noopener noreferrer">
-                <i className="ri-facebook-circle-fill ri-lg text-white" />
-              </a>
-              <a
-                href={name.youtubelink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="ri-youtube-fill ri-lg text-white" />
-              </a>
-
-                
+                <a href={name.fblink} target="_blank" rel="noopener noreferrer">
+                  <i className="ri-facebook-circle-fill ri-lg text-white" />
+                </a>
+                <a
+                  href={name.youtubelink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="ri-youtube-fill ri-lg text-white" />
+                </a>
               </div>
             </div>
           </div>
@@ -220,6 +250,49 @@ const Navbar = () => {
                   <i className="ri-apps-2-line" /> Home
                 </Link>
               </li>
+
+              {token ? (
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/dashboard">
+                      Dashboard
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/user/change-password">
+                      Change Password
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <a className="nav-link" href="#" onClick={logoutUser}>
+                      Logout
+                    </a>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/login">
+                      Login
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/register">
+                      Register
+                    </Link>
+                  </li>
+
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/contact">
+                      Contact
+                    </Link>
+                  </li>
+                </>
+              )}
+
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
                   About

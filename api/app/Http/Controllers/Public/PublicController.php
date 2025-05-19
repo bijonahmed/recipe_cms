@@ -87,6 +87,7 @@ class PublicController extends Controller
     {
         $data = Recipe::orderBy('recipe.id', 'desc') // or 'desc'
             ->select('recipe.*', 'post_category.name as category_name')
+             ->where('recipe.status',1)
             ->join('post_category', 'recipe.category_id', '=', 'post_category.id')
             ->limit(6)
             ->get();
@@ -120,6 +121,7 @@ class PublicController extends Controller
         $page = $request->get('page', 1); // default to page 1
 
         $query = Recipe::orderBy('recipe.id', 'desc')
+            ->where('recipe.status',1)
             ->select('recipe.*', 'post_category.name as category_name')
             ->join('post_category', 'recipe.category_id', '=', 'post_category.id');
 

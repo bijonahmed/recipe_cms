@@ -23,7 +23,7 @@ export default function AuthUser() {
     const http = axios.create({
         baseURL:
             process.env.NODE_ENV === 'production'
-                ? 'https://api.moon-nest.com/api/'
+                ? 'https://api.recipe.futuregenit.com/api/'
                 : 'http://127.0.0.1:8000/api/',
         headers: {
             'Content-Type': 'application/json',
